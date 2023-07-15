@@ -13,11 +13,12 @@
 	<section id="intro" class="wrapper style1 fullscreen fade-up">
 		<div class="inner">
 			<h1>FeeCodeCash ;)</h1>
+			<h2>Hola {{ user.username }}</h2>
 			<p>Web que vende cursos de programacion, desarrollada por la gentusa que asiste a los encuentros
 				presenciales en SP.</p>
 			<ul class="actions">
 				<li><a href="#one" class="button scrolly">Conoce mas</a></li>
-				<li><a href="#" class="button scrolly">Iniciar sesion</a></li>
+				<li><a href="{% url 'login' %}" class="button scrolly">Iniciar sesion</a></li>
 			</ul>
 		</div>
 	</section>

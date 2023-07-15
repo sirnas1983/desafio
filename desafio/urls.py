@@ -18,8 +18,9 @@ from django.contrib import admin
 from django.urls import path
 
 from desafio.views import indexView
-
+from django.contrib.auth.views import LoginView
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', indexView, name="index")
+    path('', indexView, name="index"),
+    path('login/', LoginView.as_view(template_name='usuarios/login.html'), name='login')
 ]

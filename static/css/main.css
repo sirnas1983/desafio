@@ -3907,3 +3907,13 @@ input, select, textarea {
 			}
 
 		}
+
+
+.formulario {
+	max-width: 50%;
+	margin-top: 14%;
+	
+	max-height: 50%;
+	margin-left: 40%;
+}
+
