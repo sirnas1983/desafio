@@ -8,4 +8,3 @@ def indexView(request):
     context = {
         'posteos' : Curso.objects.all()}
     return render(request, 'index.html', context )
-
