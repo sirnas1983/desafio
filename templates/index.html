@@ -80,9 +80,9 @@
 				
 				{% for post in posteos %}
 				<section>
-					<span class="icon solid major fa-code"></span>
-					<h3>{{post.fecha}}</h3>
-					<p>{{post.body}}</p>
+					<span class="icon solid major fa-code">{{post.nombre}}</span>
+					<h3>{{post.fecha_inicio}}</h3>
+					<p>{{post.descripcion}}</p>
 				</section>
 					
 				{% endfor %}
@@ -124,7 +124,7 @@
 				</section> -->
 			</div>
 			<ul class="actions">
-				<li><a href="generic.html" class="button">Learn more</a></li>
+				<li><a href="{% url 'curso:crear' %}" class="button">Agregar curso</a></li>
 			</ul>
 		</div>
 	</section>
